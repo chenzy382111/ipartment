@@ -1,0 +1,98 @@
+      /*清除外边距和内边距*/
+			.container-fluid{margin: 0;padding: 0;}
+      *{margin: 0; padding: 0;box-sizing: border-box;}
+			/*设置背景图*/
+			.loginPage{
+				height: 100%;
+				background: url(login-bg.jpg) 50% no-repeat;
+				position: relative;
+			}
+			/*登录框的位置和尺寸*/
+			.login{
+				background: #FFFFFF;
+				width: 21.25rem;
+				height: 30rem;
+				padding: 2.5rem 2rem;
+				position: absolute;
+				top: 9rem;
+				right: 5rem;
+			}
+			/*调整字体之间的位置*/
+			#name{
+				padding-left: 3px;width: 300px;height: 30px;
+			}
+			/*鼠标悬停时有一只小手*/
+			#name>button{
+				cursor: pointer;
+			}
+			/*调整logo图的位置*/
+		  #pic{
+			  display: flex;
+			  justify-content: center;
+		  }
+		  /*使用弹性,让两个文本款居中,调试两个文本框的位置*/
+			.login_phone .login_security{
+				margin-top: 200px;
+				display: flex;
+				justify-content: center;
+				padding-top: 20px;
+				padding-left: 5px !important;
+			}
+			.login_phone>input , .login_security>input{
+				padding-left: 8px;
+			}
+			/*登录按钮的样式*/
+			button{
+				background: transparent;
+				border: 0px;
+				font-size: 18px;
+				outline: none;
+			}
+			/*点击按钮时会有黑色的下划线*/
+			button:focus{
+				outline: 0;
+				border-bottom: 4px solid black;
+			}
+			/*两个文本框之间的距离*/
+			.phone_reg,.password{
+				margin: 0 33px;
+			}
+			/*去除输入框的轮廓*/
+			.login_phone input:focus{
+				outline: 0;
+			}
+			/*去除密码框的轮廓*/
+			.login_security input:focus{
+				outline: 0;
+			}
+			/*登录按钮的样式*/
+			#alog1{
+				margin: 20px 0px 0px;
+				display: flex;
+				justify-content: center;
+				width: 100%;height: 44px;
+				background-color: black;
+				display: flex;
+				justify-content: center;
+			}
+			/*按钮中的文本*/
+			#alog1>a{
+				display: block;
+				color: white;
+				text-decoration: none;
+				padding-top: 10px;
+				font-size: 14px;
+			}
+			/*调整字段的位置*/
+			.my_text{
+				margin-top:10px ;
+			}
+			/*设置字段的字体*/
+			.detail{
+				font-size: 14px;
+			}
+			/*a标签字体的颜色*/
+			.detail>a{
+				text-decoration: none;
+				color: #1D4A78;
+			}
