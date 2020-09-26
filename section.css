@@ -1,0 +1,226 @@
+/* 回到顶部 */
+.goTop{
+	position: fixed;
+	right: 40px;
+	bottom: 80px;
+	transition: 1s;
+}
+.goTop:hover{
+	transform: scale(1.5);
+}
+
+
+/* section 1*/
+			/* 左侧文本 */
+			.my_bounce:hover{
+				animation: bounce 1s infinite;
+			}
+			#home_left{
+				    width: 390px;
+				    height: 852px;
+				    background: #121f2c;
+				    padding-top: 3.5rem;
+			}
+			#home_left>div{
+				width: 340px;height: 462px;
+				margin-left: 50px;
+				margin-top: 120px;
+			}
+			#home_left>div h1{
+				font-size: 72px;
+				font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+				color: #4e79a5;
+				font-weight: bold;
+			}
+			#home_left>div p{
+				color: #FFFFFF;
+				font-size: 14px;
+				margin-top: 40px;
+				margin-bottom: 0;
+			}
+			#home_left>div>div{
+				margin-top: 80px;
+			}
+			#home_left img{
+				width: 60%;
+			}
+			/* 搜索框 */
+			#search{
+				width: 260px;
+				height: 38px;
+			}
+			#search_btn{
+				width: 120px;height: 38px;
+				background-color: #1D4A78;
+				text-align: center;
+				line-height: 38px;
+				color: #FFFFFF;
+			}
+			#search_input{
+				top: 460px;left: 100px;
+				z-index: 3;
+				margin-left: -50px;
+			}
+			
+			/* section2 */
+			#section2{
+				width: 1280px;
+				margin: 0 66.5px;
+				padding: 0 50px;
+				top: 712px;
+			}
+			/* 加入会员文本 */
+			#join_vip{
+				width: 390px;height: 430px;
+				background-color: #ee7500;
+				margin-left: 1050px;
+				color: #FFFFFF;
+				font-size: 21px;
+				text-align: center;
+			}
+			#join_vip>div{
+				width: 290px;height: 186px;
+				margin:80px 0 0 49px;
+			}
+			#join_vip>div a{
+				height: 40px;width: 300px;
+				background-color: #FFFFFF;
+				color: #ee7500;
+				text-decoration: none;
+				line-height: 40px;
+				margin-top: 40px;
+				font-size: 18px;
+			}
+			/* 左侧小文本 */
+			#section2_text{
+				width: 448px;height: 160px;
+				font-size: 20px;
+				text-align: justify;
+				top: 318px;
+			}
+			#section2_text h1{
+				color: #1d4a78;
+				margin-bottom: 20px;
+			}
+			#section2_text p{
+				color: #4a4a4a;
+			}
+			
+			/* section3 */
+			/* 自如模板 */
+			#section3{
+				width: 1152px;height: 304.95px;
+				background-color: gray;
+				margin: 0 auto;
+				margin-top: 450px;
+			}
+			#section3 img{
+				width: 270px;height: 203px;
+				/* transition: all 2s; */
+			}
+			#section3 img:hover{
+			/* 	transform: scale(1.05); */
+			}
+			
+			/* 热点房源标题 */
+			#title{
+				width: 1152px;height: 97px;
+				margin: 0 auto;
+			}
+			#title>h2{
+						margin: 60px auto 0;
+				    padding: 0 10px;
+				    display: inline-block;
+				    height: 36px;
+				    font-size: 30px;
+				    color: #000;
+				    color: rgba(0,0,0,.85);
+				    font-weight: 600;
+			}
+			#title>h3{
+				margin-top: 6px;
+				    font-size: 17px;
+				    color: #000;
+				    color: rgba(0,0,0,.4);
+				    text-align: center;
+				    margin-bottom: 32px;
+				    font-weight: 400;
+			}
+			#title img{
+				width: 36px;height: 36px;
+			}
+			.my_overflow{overflow: hidden;}
+			.my_imgs{transition: 1s;}
+			.my_imgs:hover{transform: scale(1.04);}
+			/* 热点轮播图 */
+			#mycarousel{
+				margin: 50px auto;
+				text-align: center;
+				background-color: rgba(0,0,0,0.1);
+			}
+			.w_35{width: 35%;}
+			
+			
+/* 大图 */
+.my_video{
+	background: url(../image/index/b0e90144-c06a-4ab1-9e39-2831c55c7210.jpg) no-repeat;
+	height:600px ;
+}
+.my_video>div>img:first-child{
+	margin-top: 135px;
+	width: 1000px;
+}
+/* 首页房源展示 */
+#home_list{
+	width: 1152px;
+	margin: 0 auto;
+	margin-top: 3rem;
+	color: rgba(0,0,0,0.4);
+	font-size: 12px;
+}
+#home_list>div{
+	width: 370px;
+	border: 1px #E8E8E8 solid;
+	box-sizing: border-box;
+}
+#home_list>div img{
+	width: 100%;height: 270px;
+}
+.my_home_list{
+	margin-top: 15px;
+	margin-left: 15px;
+}
+.my_home_list a{
+	color: rgba(0,0,0,0.85);
+	font-size: 17px;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.my_home_list a:hover{
+	text-decoration: none;
+	color: orange;
+}
+#home_list .my_home_list .px_20{
+	width: 20px;height: 20px;
+}
+#home_list .my_home_list img{
+	width: 16px;height: 16px;
+}
+#home_list span{
+	display: inline-block;
+	background-color: rgba(0,0,0,0.03);
+	padding: 6px 10px;
+	margin: 0px 5px 5px 0px;
+}
+.list_price{
+	color: #FF961E;
+	font-size: 21PX;
+	right: 15px;
+	top: 20px;
+}
+#home_list .vr_video{
+	left: 15px;
+	top: 15px;
+	width: 60px;height: 30px;
+}
