@@ -1,0 +1,402 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/get_room.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style>
+
+		/* 响应式 */
+		</style>
+	</head>
+	<body>	
+			<!-- mypage-->
+			<div class="search">
+			  <!-- 左 -->
+				<div class="search_left float-left ">
+					<!-- 详细内容列 -->
+					<div class="search_left_details">
+						<table></table><!-- 清除margin影响 -->
+						 <!-- 定位城市 -->
+						<div class="select_location left_title">
+								<div class="d-flex align-items-center pl-3">
+									<img class="location_icon mr-2" src="image/get-rooms/下载.png" alt="">
+									<span>
+										<div class="dropdown">
+											<button data-toggle="dropdown" class="btn btn-link dropdown-toggle">上海</button>
+											<ul class="dropdown-menu">
+											  <li><a href="#">上海</a></li>
+											  <li><a href="#">深圳</a></li>
+											  <li><a href="#">广州</a></li>
+											  <li><a href="#">山东</a></li>
+											  <li><a href="#">成都</a></li>
+											  <li><a href="#">北京</a></li> 
+											</ul>
+										</div>
+									</span>
+								</div>
+						 </div>
+						 <!-- 选位置 -->
+						<div class="select_location m-30">
+							<div class="left_title">选位置</div>
+							
+							 <!-- 三级联动 -->	
+							<div class="form-group d-flex justify-content-center">
+								<div >
+									<select name="community" id="input_province" class="form-control" value="行政区">
+									  <option  value="">青浦区</option>
+										<option  value="">浦东区</option>
+									  <option value="">嘉定区</option>
+									</select>
+								</div>
+								<div class="">
+									<select name="input_city" id="input_city" class="form-control">
+										<option value="">1号线</option>
+										<option value="">2号线</option>
+										<option value="">9号线</option>
+									</select>
+								</div>
+								<div class="">
+									<select name="input_area" id="input_area" class="form-control">
+										<option value="">金科路</option>
+										<option value="">徐家汇</option>
+										<option value="">世纪公园-</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						 <!-- 选品牌 -->
+						<div>
+							<div class="left_title">选品牌</div>
+							<table class="product_sorts">
+								<tr>
+									<td><a href="#">全部品牌</a></td>
+									<td><a href="#">魔方</a></td>
+								</tr>          
+								<tr>           
+									<td><a href="#">摩尔</a></td>
+									<td><a href="#">9号楼</a></td>
+								</tr>          
+								<tr>           
+									<td><a href="#">v课</a></td>
+									<td><a href="#">联盟品牌</a></td>
+								</tr>
+							</table>
+						</div>
+						<!-- 选价格 -->
+						<div>
+							<div class="left_title">选品牌</div>
+							<table class="product_sorts">
+								<tr>
+									<td><a href="#">全部品牌</a></td>
+									<td><a href="#">￥0-￥2000</a></td>
+								</tr>          
+								<tr>           
+									<td><a href="#">￥2001-￥4000</a></td>
+									<td><a href="#">￥4001-￥6000</a></td>
+								</tr>          
+								<tr>           
+									<td><a href="#">￥6001-￥8000</a></td>
+									<td><a href="#">￥8000以上</a></td>
+								</tr>
+							</table>
+						</div>
+						<!-- 选类型 -->
+						<div class="select_type ">
+							<div class="left_title">选类型</div>
+							<ul class="d-flex list-unstyled justify-content-around ">
+								<li class="border w-25"><a  class="text-muted" href="">全部</a></li>
+								<li class="border  w-25"><a class="text-muted"  href="">白领公寓</a></li>
+								<li class="border w-25"><a  class="text-muted" href="">多人宿舍</a></li>
+							</ul>	
+						</div>
+						<!-- 已选条件 -->
+						<div>
+							<div class="font_sm">已选条件</div>
+						</div >
+						<!-- left-bottom -->
+						<div class="reset ">清空全部筛选条件</div>
+						
+				  </div>
+			  </div>
+			  <!-- 右 -->
+				<div class="search_right float-left  ">
+				 <!-- 上 -->
+				<div class=" d-flex justify-content-center " >
+				 	  <div class="search_count">上海 找到 xx 家店</div>
+				 		<div class="dropdown border  p-2 bg-white mr-5 ">
+				 			  <a class="dropdown-toggle" href="#" role="button" id="默认排序" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				 			默认排序
+				 			  </a>
+				 			  <div class="dropdown-menu" aria-labelledby="默认排序">
+				 					<a class="dropdown-item" href="#">默认排序</a>
+				 					<a class="dropdown-item" href="#">推荐排序</a>
+				 					<a class="dropdown-item" href="#">价格排序</a>
+				 					<a class="dropdown-item" href="#">距离排序</a>
+				 			  </div>
+				 	  </div>
+				 	  <div class="search_map border p-2 bg-white ">
+				 		  <a href="#">
+				 	        <img class="mr-2" src="image/get-rooms/地图类_地图.png">地图找房
+				 		  </a>
+				 		</div>
+				 </div>
+				 <!-- 中 -->
+				<div class="search_list">
+				 	 <div  class="row no-gutters ">
+				 		 <div class="col-6  pr-3">
+				 						<ul class="w-100 list-unstyled">
+				 							<li>
+				 								<div ><img class="img1 " src="image/get-rooms/get_rooms1.jpg"></div>
+				 							</li>
+				 							<li class="shop_name">
+				 								<a href="#">上海港城店</a>
+				 							</li>
+				 							<li class="shop_describ">
+				 								 <ul class="list-unstyled d-flex  ">			
+				 										<li class="border mr-4"><a class="text-muted" href="#">超大公寓</a></li>
+				 										<li class="border mr-4"><a class="text-muted" href="#">近地铁</a></li>
+				 										<li class="border "><a class="text-muted" href="#">近商场</a></li>
+				 								 </ul>
+				 							</li>
+				 							<li class="room_price">
+				 								<a href="#">
+													每间
+													 <span>￥2350</span>
+													/月起
+												</a>	
+				 							</li>
+				 							<li class="VIP_price ">
+				 								<a  href="#">
+				 									每间
+				 				            <div class="d-inline-block h5">￥2250</div>
+				 									/月起 
+													<span>会员价</span>
+				 								</a>
+												<div class="float-right font_small ">距您20.2km</div>
+				 							</li>
+				 						</ul>	
+				 		 </div>
+				 	  <!-- li2 -->
+				      <div class="col-6  pl-3">
+				      		 <!-- <div class=""> -->
+				      			 <!-- <div class=" "> -->
+				      					<ul class="w-100 list-unstyled">
+				      						<li>
+				      							<div ><img class="img1 " src="image/get-rooms/get_rooms1.jpg"></div>
+				      						</li>
+				      						<li class="shop_name">
+				      							<a href="#">上海港城店</a>
+				      						</li>
+				      						<li class="shop_describ">
+				      							 <ul class="list-unstyled d-flex  ">			
+				      									<li class="border mr-4"><a class="text-muted" href="#">超大公寓</a></li>
+				      									<li class="border mr-4"><a class="text-muted" href="#">近地铁</a></li>
+				      									<li class="border "><a class="text-muted" href="#">近商场</a></li>
+				      							 </ul>
+				      						</li>
+				      						<li class="room_price">
+				      							<a href="#">
+				      								每间
+				      								 <span>￥2350</span>
+				      								/月起
+				      							</a>	
+				      						</li>
+				      						<li class="VIP_price ">
+				      							<a  href="#">
+				      								每间
+				      					        <div class="d-inline-block h5">￥2250</div>
+				      								/月起 
+				      								<span>会员价</span>
+				      							</a>
+				      							<div class="float-right font_small ">距您20.2km</div>
+				      						</li>
+				      					</ul>	
+				      			<!-- </div> -->
+				      	   <!-- </div> -->
+				 			 </div>
+				 	</div>
+				   <div  class="row no-gutters ">
+				   	 <div class="col-6  pr-3">
+				   					<ul class="w-100 list-unstyled">
+				   						<li>
+				   							<div ><img class="img1 " src="image/get-rooms/get_rooms1.jpg"></div>
+				   						</li>
+				   						<li class="shop_name">
+				   							<a href="#">上海港城店</a>
+				   						</li>
+				   						<li class="shop_describ">
+				   							 <ul class="list-unstyled d-flex  ">			
+				   									<li class="border mr-4"><a class="text-muted" href="#">超大公寓</a></li>
+				   									<li class="border mr-4"><a class="text-muted" href="#">近地铁</a></li>
+				   									<li class="border "><a class="text-muted" href="#">近商场</a></li>
+				   							 </ul>
+				   						</li>
+				   						<li class="room_price">
+				   							<a href="#">
+				   								每间
+				   								 <span>￥2350</span>
+				   								/月起
+				   							</a>	
+				   						</li>
+				   						<li class="VIP_price ">
+				   							<a  href="#">
+				   								每间
+				   			            <div class="d-inline-block h5">￥2250</div>
+				   								/月起 
+				   								<span>会员价</span>
+				   							</a>
+				   							<div class="float-right font_small ">距您20.2km</div>
+				   						</li>
+				   					</ul>	
+				   	 </div>
+				     <!-- li2 -->
+				       <div class="col-6  pl-3">
+				       		 <!-- <div class=""> -->
+				       			 <!-- <div class=" "> -->
+				       					<ul class="w-100 list-unstyled">
+				       						<li>
+				       							<div ><img class="img1 " src="image/get-rooms/get_rooms1.jpg"></div>
+				       						</li>
+				       						<li class="shop_name">
+				       							<a href="#">上海港城店</a>
+				       						</li>
+				       						<li class="shop_describ">
+				       							 <ul class="list-unstyled d-flex  ">			
+				       									<li class="border mr-4"><a class="text-muted" href="#">超大公寓</a></li>
+				       									<li class="border mr-4"><a class="text-muted" href="#">近地铁</a></li>
+				       									<li class="border "><a class="text-muted" href="#">近商场</a></li>
+				       							 </ul>
+				       						</li>
+				       						<li class="room_price">
+				       							<a href="#">
+				       								每间
+				       								 <span>￥2350</span>
+				       								/月起
+				       							</a>	
+				       						</li>
+				       						<li class="VIP_price ">
+				       							<a  href="#">
+				       								每间
+				       					        <div class="d-inline-block h5">￥2250</div>
+				       								/月起 
+				       								<span>会员价</span>
+				       							</a>
+				       							<div class="float-right font_small ">距您20.2km</div>
+				       						</li>
+				       					</ul>	
+				       			<!-- </div> -->
+				       	   <!-- </div> -->
+				   		 </div>
+				   </div>
+				    <div  class="row no-gutters ">
+				    	 <div class="col-6  pr-3">
+				    					<ul class="w-100 list-unstyled">
+				    						<li>
+				    							<div ><img class="img1 " src="image/get-rooms/get_rooms1.jpg"></div>
+				    						</li>
+				    						<li class="shop_name">
+				    							<a href="#">上海港城店</a>
+				    						</li>
+				    						<li class="shop_describ">
+				    							 <ul class="list-unstyled d-flex  ">			
+				    									<li class="border mr-4"><a class="text-muted" href="#">超大公寓</a></li>
+				    									<li class="border mr-4"><a class="text-muted" href="#">近地铁</a></li>
+				    									<li class="border "><a class="text-muted" href="#">近商场</a></li>
+				    							 </ul>
+				    						</li>
+				    						<li class="room_price">
+				    							<a href="#">
+				    								每间
+				    								 <span>￥2350</span>
+				    								/月起
+				    							</a>	
+				    						</li>
+				    						<li class="VIP_price ">
+				    							<a  href="#">
+				    								每间
+				    			            <div class="d-inline-block h5">￥2250</div>
+				    								/月起 
+				    								<span>会员价</span>
+				    							</a>
+				    							<div class="float-right font_small ">距您20.2km</div>
+				    						</li>
+				    					</ul>	
+				    	 </div>
+				      <!-- li2 -->
+				        <div class="col-6  pl-3">
+				        		 <!-- <div class=""> -->
+				        			 <!-- <div class=" "> -->
+				        					<ul class="w-100 list-unstyled">
+				        						<li>
+				        							<div ><img class="img1 " src="image/get-rooms/get_rooms1.jpg"></div>
+				        						</li>
+				        						<li class="shop_name">
+				        							<a href="#">上海港城店</a>
+				        						</li>
+				        						<li class="shop_describ">
+				        							 <ul class="list-unstyled d-flex  ">			
+				        									<li class="border mr-4"><a class="text-muted" href="#">超大公寓</a></li>
+				        									<li class="border mr-4"><a class="text-muted" href="#">近地铁</a></li>
+				        									<li class="border "><a class="text-muted" href="#">近商场</a></li>
+				        							 </ul>
+				        						</li>
+				        						<li class="room_price">
+				        							<a href="#">
+				        								每间
+				        								 <span>￥2350</span>
+				        								/月起
+				        							</a>	
+				        						</li>
+				        						<li class="VIP_price ">
+				        							<a  href="#">
+				        								每间
+				        					        <div class="d-inline-block h5">￥2250</div>
+				        								/月起 
+				        								<span>会员价</span>
+				        							</a>
+				        							<div class="float-right font_small ">距您20.2km</div>
+				        						</li>
+				        					</ul>	
+				        			<!-- </div> -->
+				        	   <!-- </div> -->
+				    		 </div>
+				    </div>
+				     
+									 			 
+				 </div>
+				 <!-- 中间结束 -->
+				 <!-- 下 -->
+				 <div class="right_bottom">
+				    <ul class="pagination d-flex justify-content-center">
+								<li class="page-item disabled"> 
+									 <a  class="page-link" href="#"> 上一页</a>
+								</li>
+								<li class="page-item active">
+									 <a  class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item ">
+									 <a  class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item ">
+									 <a  class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item ">
+									 <a  class="page-link" href="#">4</a>
+								</li>
+								<li class="page-item ">
+									 <a  class="page-link" href="#">5</a>
+								</li>
+								<li class="page-item ">
+									 <a  class="page-link" href="#">下一页</a>
+								</li>
+					  </ul>	
+				 </div>			 
+			</div>
+		</div>
+	</body>
+</html>

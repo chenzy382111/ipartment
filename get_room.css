@@ -1,0 +1,139 @@
+
+		body{
+			background:#f7f7f7;
+			
+		}
+		*{
+			padding:0;
+			margin:0;
+			border-sizing:border-box;
+		}
+		.search{
+			position:relative;
+			margin:0 auto;
+			with:100%;
+			max-width:960px;
+			min-width:1280px;
+			height:100%;
+			font-size:.7rem;
+			padding:4rem 0 0;
+			position:relative;	
+		}
+		/* search_left */
+		.search_left{
+			width:24rem;
+			color: #000;
+		}
+		.search_left a{
+			color:#4a4a4a;
+		}
+	
+		.left_title{
+			width:100%;
+			padding:3px 3px;
+			margin-top:22.5px;
+			margin-bottom: 1rem;
+			font-size:1.1rem;
+			font-weight: 500;
+			font-size: 1.1rem;
+		}
+		.search_left_details{
+			background:#fff;
+			box-shadow:.1rem .2rem 0 rgba(0,68,119,.1);
+		}
+		.reset{
+			 text-align:center;
+			 background:#e8ecf2;
+			 line-height: 3rem;
+			 cursor:pointer;
+		 }
+	  .location_icon{
+			width:.6rem;
+			height:.9rem;
+		}  
+		.product_sorts{
+			table-layout:fixed;
+			width:260px;
+			height:130px;
+			border-collapse:separate;
+			border-spacing:8px 10px;
+			text-align: center;
+			padding:2px;
+		}
+		.product_sorts td{
+			border:1px solid #e8e8e8;
+			padding:2px;
+		}
+		/* search_right */
+	  .search_right{
+			padding:30px; 
+	
+		}
+	 .search_count{
+		 font-size:1rem;
+		 vertical-align:center;
+		 padding:2px 480px 2px 2px
+	 }
+	 .search_list{
+	 	   margin-top:20px;
+	 }
+	 /* 房源图片尺寸 */
+	 .img1{
+    width:400px;
+		height:230px;
+		margin-bottom:1rem;
+	 }
+	 .shop_name>a{
+	 		 font-size:1.1rem;
+	 		padding-left:1rem;	
+			color:#000;
+	 }
+	
+	 .shop_describ{
+		 margin-top:.6rem;
+		 padding-left:1rem;
+		 font-size:0.8rem;
+		 line-heigt:1.5rem;
+		 font-weight:400;
+	 }
+	 .room_price{
+	 		 margin-top:1rem;
+	 }
+	 .room_price>a,.font_small{
+		 margin-left:1rem;
+		 font-size:0.5rem;
+		 color:#4a4a4a;
+	 }
+	
+	 .VIP_price{
+		 margin-left:.8rem;
+		 color:#000;
+		 font-size:15px;
+		 
+	 }
+	 .VIP_price>a{
+	 		color:#000;
+			font-size:14px;
+	 }
+	 .VIP_price>a>span:first-child{
+			 font-weight:700;
+			 font-size:16px;
+	 }
+	 
+	 
+	 .VIP_price>a>span:last-child{
+		 
+		 background:#B3D7FF;
+		 color:#000;
+	 }
+	 /* 右下 */
+	 .page-link{
+	 		 border-radius:.25rem;
+	 }
+	 .page-item+.page-item{
+	 		 margin-left:5px;
+	 		 border-shadow:0;
+	 }
+	 .page-link:hover{
+	 		 border:1px solid #0aa1ed;
+	 }
