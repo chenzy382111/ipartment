@@ -1,0 +1,84 @@
+*{margin: 0;padding: 0;}
+/* 设置整个div背景图 */
+.my_bg{
+	height: 100%;
+	background-image: url(../img/login-bg.jpg);
+}
+/* 登录表 */
+.my_login_table{
+	width: 340px;height: 480px;
+	top: 6rem;
+	right: 5rem;
+	padding: 2.5rem 2rem;
+}
+/* 登录选项div边框设置 */
+/* .my_border{
+	border-bottom:4px solid #000000;
+} */
+/* 登录选项字体设置 */
+.my_size{
+	font-size: 18px;
+}
+.my_size:hover{
+	text-decoration: none;
+}
+.my_size:focus{
+	border-bottom:4px solid #000000;
+}
+/* 手机输入框 */
+.input_phone{
+	font-size: 14px;
+	padding: 10px;
+	border-radius: 0;
+	border-color: #000000;
+	margin-top: 20px;
+}
+.input_phone:focus{
+	box-shadow: none;
+	border-color: 0;
+}
+/* 验证码输入框 */
+.bg_black{
+	width: 170px;height: 44px;
+	line-height: 44px;
+	font-size: 14px;
+	background-color: #000000;
+	margin-top: 20px;
+}
+/* 登录按钮背景 */
+.bg_button{
+	width: 276px;height: 43px;
+	margin-top: 20px;
+	background-color: #000000;
+}
+/* 登录字体设置 */
+.text_size{
+	font-size: 14px;
+	line-height: 43px;
+}
+.text_size:hover{
+	text-decoration: none;
+}
+/* 底部条款字体大小 */
+.text_size1{
+	font-size: 14px;
+	color: #4A4A4A;
+}
+.text_color{
+	color: #1d4a78;
+}
+.text_color:hover{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
