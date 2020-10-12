@@ -1,0 +1,9 @@
+.my_input1{
+	border-radius: 0;
+	border-color: #0aa1ed;
+	font-size: 0.8rem;
+}
+.my_input1:focus{
+	box-shadow: 0px 0px 0px 0px #000;
+}
+.breadcrumb-item+.breadcrumb-item::before{content: "|";}
