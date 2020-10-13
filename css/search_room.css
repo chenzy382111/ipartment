@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+			.my_input{
+				width: 25.6875rem;
+				height: 3.125rem;
+				border: 1px solid #808080;
+			}
+			.my_input:focus{
+				outline: 0;
+			}
+			.my_logo1{
+				display: block;
+				width: 150px;
+				height:3.125rem;
+				background-color: #FF961e;
+				font-size: 1.125rem;
+				line-height: 3.125rem;
+				text-align: center;
+				float: right;
+				margin-right: 549px;
+			  border-radius: 0 2px 2px 0;
+				}
+			.my_logo2{
+				display: block;
+				width: 150px;
+				height:3.125rem;
+				/* border:1px solid #808080; */
+				background-size: cover;
+				background-color: #FF961e;
+				font-size: 1.125rem;
+				background:#fff url(https://webimg.ziroom.com/d045cfa0-6faa-4611-82b7-e3ee3aeeee60.png) no-repeat 50% scroll;
+				line-height: 3.125rem;
+				text-align: center;
+				position: relative;
+				left: 600px;
+				top: -50px;
+			}
+			.my_logo1:hover,.my_logo2:hover{
+				text-decoration: none;
+			}
