@@ -1,0 +1,112 @@
+.second_banner{
+	background: url(../image/second/banner_bg02.png) no-repeat;
+	position: relative;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: -3.5rem 0 0;
+	height: 540px;
+	text-align: center;
+	background-position: center;
+	background-size: cover;
+	overflow: visible;
+	transition: all .3s linear;
+}
+.second_banner>div{
+	position: absolute;
+	color: #FFFFFF;
+	font-family: Arial,PingFangSC-light,'Microsoft Yahei';
+}
+.second_banner>div>div>h2:first-child{
+	font-size: 56px;
+	text-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.4);
+}
+.second_banner>div>div>h2:nth-child(2){
+	font-size: 40px;
+	text-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,0.4);
+	/* margin-top: 0px; */
+}
+/* .second_banner>div>div:nth-child(2){
+	margin-top: 0px;
+} */
+.second_banner a{
+	font-size: 18px;
+	color: #FFFFFF;
+	border: 1px #FFFFFF solid;
+	padding: 9.5px 24px;
+}
+.second_banner a:hover{
+	text-decoration: none;
+}
+.container-fluid>div:nth-child(2){
+	position: absolute;
+	z-index: 4;
+	/* top: 525px; */
+	justify-content: center;
+	margin-top: -15px;
+	left: 50%;
+	margin-left: -600px;
+	width: 1200px;
+	flex-shrink: 1;
+}
+.box_shadow{
+	color: #353535;
+	background-color: #353535;
+	/* box-shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,.1); */
+	padding: 24px 252px;
+	font-size: 24px;
+}
+.box_shadow:hover{
+	text-decoration: none;
+	color: #353535;
+}
+#owner_reg{
+	background: url(../image/second/footer_bg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 45px;/* 轮播图之后注释掉 */
+	height: 530px;
+	width: 100%;
+}
+#owner_reg>div>div:nth-child(2){
+	width: 400px;
+}
+.owner_form{
+	color: #4A4A4A;
+	font-size: 18px;
+}
+.form_control {
+  display: block;
+  width: 100%;
+  padding: 15.5px 0px 15.5px 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  /* background-color: #fff; */
+  /* background-clip: padding-box; */
+  /* border: 1px solid #ced4da; */
+  /* transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
+	outline: none;
+	font-size: 18px;
+}
+.w_70{width: 70%;}
+.w_30{
+	width: 30%;
+	background-color: #FFFFFF;
+	border: 0px;
+	color: darkorange;
+	cursor: pointer;
+	height: 60px;
+	margin-top: 1px;
+}
+.w_30:focus{outline: 0px;}
+.owner_form a{
+	background-color: darkorange;
+}
+.owner_form a:hover{
+	text-decoration: none;
+}
+#owner_reg>div>div:first-child{
+	margin-bottom: 50px;
+}

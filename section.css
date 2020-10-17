@@ -1,15 +1,3 @@
-/* 回到顶部 */
-.goTop{
-	position: fixed;
-	right: 40px;
-	bottom: 80px;
-	transition: 1s;
-}
-.goTop:hover{
-	transform: scale(1.5);
-}
-
-
 /* section 1*/
 			/* 左侧文本 */
 			.my_bounce:hover{

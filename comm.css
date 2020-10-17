@@ -8,3 +8,60 @@
 @media (min-width:992px) {
 	.my_header{height: 73px;}
 }
+/* 回到顶部 */
+.goTop{
+	position: fixed;
+	right: 40px;
+	bottom: 80px;
+	transition: 1s;
+}
+.goTop:hover{
+	transform: scale(1.5);
+}
+
+/* 联系客服 */
+.customer_service{
+	right: 40px;
+	top: 40%;
+	z-index: 5;
+}
+.customer_service img{
+	width: 28px;
+	height: 24px;
+}
+.customer_service a{
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #1C76B8;
+}
+.customer_service>a:first-child{
+	margin-bottom: 1px;
+}
+.customer_service a:hover{
+	text-decoration: none;
+}
+.customer_service a:hover{
+	background-color: deepskyblue;
+}
+
+/* 咨询窗口 */
+.consult{
+	right: 40px;
+	bottom: 15px;
+	z-index: 5;
+	background-color: #1C76B8;
+	font-size: 14px;
+}
+.consult a{
+	color: #FFFFFF;
+}
+.consult a:hover{
+	text-decoration: none;
+}
+.consult:hover{
+	background-color: deepskyblue;
+}
+.consult img{
+	width: 28px;
+	height: 24px;
+}
