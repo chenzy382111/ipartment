@@ -1,0 +1,725 @@
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+   *{margin: 0;padding: 0;box-sizing: border-box;}
+	 /* .container div:first-child{
+		 height: 50px;
+	 } */
+   .my_input{
+    width: 411px;
+    height: 3.125rem;
+    border: 1px solid #808080;
+		border-right: 0;
+   }
+   .my_input:focus{
+    outline: 0;
+   }
+   .my_logo1{
+		box-sizing: border-box;
+		display: inline-block;
+		margin-left: -5px;
+    width: 150px;
+    height: 50px;
+    background-color: #FF961e;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 0 2px 2px 0;
+    }
+   .my_logo2{
+    display: inline-block;
+    width: 150px;
+    height:50.7px;
+		margin-left: 18px;
+    background-color: #FF961e;
+    font-size: 15px;
+    line-height: 50.9px;
+    text-align: center;
+		border-radius: 2px;
+		border: 1px solid rgba(0,0,0,.12);
+		background:#fff url(https://webimg.ziroom.com/d045cfa0-6faa-4611-82b7-e3ee3aeeee60.png) no-repeat 50% scroll;
+		color: black;
+   }
+   .my_logo1:hover,.my_logo2:hover{
+    text-decoration: none;
+		
+   }
+	 .my_logo2:hover{
+		 color:white ;
+		 background-image:-webkit-linear-gradient(top,#A8A8A8,#999);
+		 background-repeat: repeat-y;
+	 }
+	 .my_ditu{
+		 width: 9%;
+		 height: 38%;
+		 position: relative;
+		 left: -4px;
+		 top:-3px;
+	 }
+	 .my_list a{
+		 font-size: 15px;
+	 }
+	 .my_list>div>ul>li a{
+		 color: #4E555B;
+	 }
+	 .my_suosou{
+		 width: 50px;
+		 height: 20px;
+	 }
+	 .my_suosou:focus{
+		 outline: 0;
+	 }
+	 .my_fontSize{
+		 font-weight: bold;
+		 font-size: 15px;
+	 }
+	 .my_orange{
+		 color: #ff961e !important;
+	 }
+	 .my_room{
+		 width: 368px;height: 431px;
+		 border: 1px solid #e8e8e8;
+		 border-radius: 2px;
+	 }
+	 .my_room .img1{
+		 /* border: 1px solid #000000; */
+		 width: 368px;
+		 height: 270px;
+	 }
+	 .my_qian{
+		 width:20px;
+		 height: 20px;
+	 }
+	 #a1{
+		 font-size: 17px;
+	 }
+	 #a1:hover{
+		 color:orange;
+	 }
+	 .my_m2{
+		 font-size: 12px;
+		 color:#00000066;
+		 width:190px;height: 13px;
+	 }
+	 .my_span{
+		 font-size: 19px;
+		 color: orange;
+		 
+		 position: relative;
+		 top: -20px;
+		 left: 270px;
+	 }
+	 #a2{
+		 font-size: 12px;
+		  color:#00000066;
+	 }
+	 #adress{
+		 width: 16px;height: 16px;
+	 }
+	 .span_little{
+		 display: inline-block;
+		 background-color: #00000008;
+		 width: 68px;
+		 height: 25px;
+		 font-size: 12px;
+		 margin-left: 4px;
+		 padding: 1px;
+		 text-align: center;
+		 color: #00000066;
+		 
+	 }
+	 .my_topline{
+		 width: 1152px;
+		 height: 30px;
+		 margin: 0 auto;
+		 border-bottom: 1px solid #00000008;
+	 }
+	 .myspan1,.myspan2{
+		 color: #00000099;
+		 width: 64px;height: 30px;
+		 margin-left: 2px;
+		 text-align: center;
+	 }
+	 .myspan1{
+		 border-bottom: 2px solid orange;
+		 color: orange;
+	 }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <!--输入框 -->
+   <div class="mt-5">		 
+		<input type="text" placeholder="请输入小区/商圈/地铁站等..." class="my_input px-3 py-10">
+		<a class="my_logo1 text-white" href="#">开始找房</a>
+    <a class="my_logo2" href="#"><img class="my_ditu"  src="logo.png">地图找房</a>
+   </div>
+	 <!-- 导航栏 -->
+	 <div class="mt-5 my_list">
+		 <div>
+			<ul class="list-unstyled d-flex ">
+				<li class="my_fontSize">找房区域</li>
+				<li class="px-3"><a href="#">区域</a></li>
+				<li class="px-3"><a href="#">地铁</a></li>
+				<li class="px-3"><a href="#">通勤</a></li>
+			</ul>
+		 </div>
+		 <div>
+			<ul class="list-unstyled d-flex">
+				<li class="my_fontSize">类型</li>
+				<li class="pl-5"><a class="my_orange" href="#">不限</a></li>
+				<li class="pl-3"><a href="#">合租</a></li>
+				<li class="pl-3"><a href="#">整租</a></li>
+				<li class="pl-3"><a href="#">自如寓</a></li>
+			</ul>
+		 </div>
+		 <div class="mt-4">
+			<ul class="list-unstyled d-flex">
+				<li class="my_fontSize">租金</li>
+				<li class="pl-5"><a class="my_orange" href="#">不限</a></li>
+				<li class="pl-3"><a href="#">1500以下</a></li>
+				<li class="pl-3"><a href="#">1500-2500元</a></li>
+				<li class="pl-3"><a href="#">2500-4000元</a></li>
+				<li class="pl-3"><a href="#">4000-6000元</a></li>
+				<li class="pl-3"><a href="#">6000-8000元</a></li>
+				<li class="pl-3"><a href="#">8000-10000元</a></li>
+				<li class="pl-3"><a href="#">10000元以上</a></li>
+				<li class="pl-3"><input class="my_suosou" type="text"></li>
+				<li>-</li>
+				<li><input class="my_suosou" type="text">&nbsp;元</li>
+				<li class="pl-3"><a class="my_orange" href="#">确定</a></li>
+			</ul>
+		 </div>
+		 <div class="mt-4">
+			<ul class="list-unstyled d-flex">
+				<li class="my_fontSize">房源特色</li>
+				<li class="pl-3"><a href="#">智能生活</a></li>
+				<li class="pl-3"><a href="#">深呼吸</a></li>
+				<li class="pl-3"><a href="#">首次合租</a></li>
+				<li class="pl-3"><a href="#">非首次合租</a></li>
+				<li class="pl-3"><a href="#">Loft</a></li>
+				<li class="pl-3"><a href="#">主卧独卫</a></li>
+				<li class="pl-3"><a href="#">独立阳台</a></li>
+				<li class="pl-3"><a href="#">有电梯</a></li>
+				<li class="pl-3"><a href="#">离地铁近</a></li>
+				<li class="pl-3"><a href="#">绿化率高</a></li>
+				<li class="pl-3"><a href="#">视频看房</a></li>
+				<li class="pl-3"><a href="#">VR看房</a></li>
+			</ul>
+		 </div>
+		 <div class="mt-4">
+			<ul class="list-unstyled d-flex">
+				<li class="my_fontSize">朝向</li>
+				<li class="pl-5"><a href="#">南</a></li>
+				<li class="pl-3"><a href="#">北</a></li>
+				<li class="pl-3"><a href="#">东</a></li>
+				<li class="pl-3"><a href="#">西</a></li>
+				<li class="pl-3"><a href="#">南北</a></li>
+			</ul>
+		 </div>
+		 <div class="mt-4">
+			<ul class="list-unstyled d-flex">
+				<li class="my_fontSize">供暖方式</li>
+				<li class="pl-3"><a href="#">集体供暖</a></li>
+				<li class="pl-3"><a href="#">独立供暖</a></li>
+				<li class="pl-3"><a href="#">中央供暖</a></li>
+			</ul>
+		 </div>
+		 <div class="mt-4">
+			<ul class="list-unstyled d-flex">
+				<li class="my_fontSize">签约时长</li>
+				<li class="pl-3"><a class="my_orange" href="#">不限</a></li>
+				<li class="pl-3"><a href="#">长租一年</a></li>
+				<li class="pl-3"><a href="#">长租1年以上</a></li>
+				<li class="pl-3"><a href="#">可短租</a></li>
+			</ul>
+		 </div>
+		 <div class="mt-4">
+			<ul class="list-unstyled d-flex">
+				<li class="my_fontSize">房源状态</li>
+				<li class="pl-3"><a class="my_orange" href="#">不限</a></li>
+				<li class="pl-3"><a href="#">可立即入住</a></li>
+				<li class="pl-3"><a href="#">可预签</a></li>
+				<li class="pl-3"><a href="#">自如客转租</a></li>
+				<li class="pl-3"><a href="#">可预订</a></li>
+			</ul>
+		 </div>
+	 </div>
+		<div class="my_topline mb-5"><!-- 默认排序 价格 面积 -->
+		  <div class="d-flex justify-content-end">
+				<span class="myspan1">默认排序</span>
+				<span class="myspan2">价格</span>
+				<span class="myspan2">面积</span>
+			</div>
+		</div>
+	 <!-- 房源信息 -->
+	 <!-- 第一行 -->
+	 <div class="d-flex justify-content-between"><!-- 需要平均分配页面布局ed最大的DIV -->
+		 <div class="my_room"><!-- 每个小DIV -->
+			 <div class="img1">
+				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+			 </div>
+			 <div class="mt-3 ml-3">
+				 <img class="my_qian mb-1 " src="qian.png" alt="">
+				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+			 </div>
+				<div class="my_m2">
+					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+			  </div>
+				<div class="ml-3 mt-2">
+					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+				</div>
+				<div class="ml-2">
+					<span class="span_little">深呼吸2.0</span>
+					<span class="span_little">智能生活</span>
+					<span class="span_little">优格2.0</span>
+				</div>
+				<div class="ml-3 mt-2">
+					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+				</div>
+		 </div>
+		 <div class="my_room ml-4">
+			 			 <div class="img1">
+			 				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+			 			 </div>
+			 			 <div class="mt-3 ml-3">
+			 				 <img class="my_qian mb-1 " src="qian.png" alt="">
+			 				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+			 			 </div>
+			 				<div class="my_m2">
+			 					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+			 					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+			 			  </div>
+			 				<div class="ml-3 mt-2">
+			 					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+			 				</div>
+			 				<div class="ml-2">
+			 					<span class="span_little">深呼吸2.0</span>
+			 					<span class="span_little">智能生活</span>
+			 					<span class="span_little">优格2.0</span>
+			 				</div>
+			 				<div class="ml-3 mt-2">
+			 					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+			 				</div>
+		 </div>
+			 <div class="my_room ml-4"><!-- 每个小DIV -->
+			 			 <div class="img1">
+			 				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+			 			 </div>
+			 			 <div class="mt-3 ml-3">
+			 				 <img class="my_qian mb-1 " src="qian.png" alt="">
+			 				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+			 			 </div>
+			 				<div class="my_m2">
+			 					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+			 					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+			 			  </div>
+			 				<div class="ml-3 mt-2">
+			 					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+			 				</div>
+			 				<div class="ml-2">
+			 					<span class="span_little">深呼吸2.0</span>
+			 					<span class="span_little">智能生活</span>
+			 					<span class="span_little">优格2.0</span>
+			 				</div>
+			 				<div class="ml-3 mt-2">
+			 					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+			 				</div>
+		 </div>
+		</div>
+		
+		<!-- 第二行 -->
+		<div class="d-flex justify-content-between mt-4"><!-- 需要平均分配页面布局ed最大的DIV -->
+				 <div class="my_room"><!-- 每个小DIV -->
+					 <div class="img1">
+						 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+					 </div>
+					 <div class="mt-3 ml-3">
+						 <img class="my_qian mb-1 " src="qian.png" alt="">
+						 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+					 </div>
+						<div class="my_m2">
+							<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+							<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+					  </div>
+						<div class="ml-3 mt-2">
+							<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+						</div>
+						<div class="ml-2">
+							<span class="span_little">深呼吸2.0</span>
+							<span class="span_little">智能生活</span>
+							<span class="span_little">优格2.0</span>
+						</div>
+						<div class="ml-3 mt-2">
+							<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+						</div>
+				 </div>
+				 
+					 <div class="my_room ml-4">
+					 			 <div class="img1">
+					 				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+					 			 </div>
+					 			 <div class="mt-3 ml-3">
+					 				 <img class="my_qian mb-1 " src="qian.png" alt="">
+					 				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+					 			 </div>
+					 				<div class="my_m2">
+					 					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+					 					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+					 			  </div>
+					 				<div class="ml-3 mt-2">
+					 					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+					 				</div>
+					 				<div class="ml-2">
+					 					<span class="span_little">深呼吸2.0</span>
+					 					<span class="span_little">智能生活</span>
+					 					<span class="span_little">优格2.0</span>
+					 				</div>
+					 				<div class="ml-3 mt-2">
+					 					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+					 				</div>
+				 </div>
+				 <div class="my_room ml-4"><!-- 每个小DIV -->
+					 			 <div class="img1">
+					 				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+					 			 </div>
+					 			 <div class="mt-3 ml-3">
+					 				 <img class="my_qian mb-1 " src="qian.png" alt="">
+					 				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+					 			 </div>
+					 				<div class="my_m2">
+					 					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+					 					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+					 			  </div>
+					 				<div class="ml-3 mt-2">
+					 					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+					 				</div>
+					 				<div class="ml-2">
+					 					<span class="span_little">深呼吸2.0</span>
+					 					<span class="span_little">智能生活</span>
+					 					<span class="span_little">优格2.0</span>
+					 				</div>
+					 				<div class="ml-3 mt-2">
+					 					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+					 				</div>
+				 </div>
+				</div>
+			<div>
+				<div class="d-flex justify-content-between mt-4"><!-- 需要平均分配页面布局ed最大的DIV -->
+						 <div class="my_room"><!-- 每个小DIV -->
+							 <div class="img1">
+								 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+							 </div>
+							 <div class="mt-3 ml-3">
+								 <img class="my_qian mb-1 " src="qian.png" alt="">
+								 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+							 </div>
+								<div class="my_m2">
+									<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+									<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+							  </div>
+								<div class="ml-3 mt-2">
+									<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+								</div>
+								<div class="ml-2">
+									<span class="span_little">深呼吸2.0</span>
+									<span class="span_little">智能生活</span>
+									<span class="span_little">优格2.0</span>
+								</div>
+								<div class="ml-3 mt-2">
+									<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+								</div>
+						 </div>
+						 
+							 <div class="my_room ml-4">
+							 	 <div class="img1">
+							 		 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+							 	 </div>
+							 	 <div class="mt-3 ml-3">
+							 		 <img class="my_qian mb-1 " src="qian.png" alt="">
+							 		 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+							 	 </div>
+							 		<div class="my_m2">
+							 			<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+							 			<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+							 	  </div>
+							 		<div class="ml-3 mt-2">
+							 			<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+							 		</div>
+							 		<div class="ml-2">
+							 			<span class="span_little">深呼吸2.0</span>
+							 			<span class="span_little">智能生活</span>
+							 			<span class="span_little">优格2.0</span>
+							 		</div>
+							 		<div class="ml-3 mt-2">
+							 			<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+							 		</div>
+						 </div>
+						 
+							 <div class="my_room ml-4"><!-- 每个小DIV -->
+							 		 <div class="img1">
+							 			 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+							 		 </div>
+							 		 <div class="mt-3 ml-3">
+							 			 <img class="my_qian mb-1 " src="qian.png" alt="">
+							 			 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+							 		 </div>
+							 			<div class="my_m2">
+							 				<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+							 				<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+							 		  </div>
+							 			<div class="ml-3 mt-2">
+							 				<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+							 			</div>
+							 			<div class="ml-2">
+							 				<span class="span_little">深呼吸2.0</span>
+							 				<span class="span_little">智能生活</span>
+							 				<span class="span_little">优格2.0</span>
+							 			</div>
+							 			<div class="ml-3 mt-2">
+							 				<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+							 			</div>
+						 </div>
+						</div>
+						
+						<div class="d-flex justify-content-between mt-4"><!-- 需要平均分配页面布局ed最大的DIV -->
+								<div class="my_room"><!-- 每个小DIV -->
+								 <div class="img1">
+									 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+								 </div>
+								 <div class="mt-3 ml-3">
+									 <img class="my_qian mb-1 " src="qian.png" alt="">
+									 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+								 </div>
+									<div class="my_m2">
+										<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+										<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+								  </div>
+									<div class="ml-3 mt-2">
+										<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+									</div>
+									<div class="ml-2">
+										<span class="span_little">深呼吸2.0</span>
+										<span class="span_little">智能生活</span>
+										<span class="span_little">优格2.0</span>
+									</div>
+									<div class="ml-3 mt-2">
+										<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+									</div>
+								 </div>
+								 
+							 <div class="my_room ml-4">
+							 			 <div class="img1">
+							 				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+							 			 </div>
+							 			 <div class="mt-3 ml-3">
+							 				 <img class="my_qian mb-1 " src="qian.png" alt="">
+							 				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+							 			 </div>
+							 				<div class="my_m2">
+							 					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+							 					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+							 			  </div>
+							 				<div class="ml-3 mt-2">
+							 					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+							 				</div>
+							 				<div class="ml-2">
+							 					<span class="span_little">深呼吸2.0</span>
+							 					<span class="span_little">智能生活</span>
+							 					<span class="span_little">优格2.0</span>
+							 				</div>
+							 				<div class="ml-3 mt-2">
+							 					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+							 				</div>
+								 </div>
+								 
+									 <div class="my_room ml-4"><!-- 每个小DIV -->
+									 		 <div class="img1">
+									 			 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+									 		 </div>
+									 		 <div class="mt-3 ml-3">
+									 			 <img class="my_qian mb-1 " src="qian.png" alt="">
+									 			 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+									 		 </div>
+									 			<div class="my_m2">
+									 				<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+									 				<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+									 		  </div>
+									 			<div class="ml-3 mt-2">
+									 				<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+									 			</div>
+									 			<div class="ml-2">
+									 				<span class="span_little">深呼吸2.0</span>
+									 				<span class="span_little">智能生活</span>
+									 				<span class="span_little">优格2.0</span>
+									 			</div>
+									 			<div class="ml-3 mt-2">
+									 				<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+									 			</div>
+								 </div>
+								</div>
+								
+								<div class="d-flex justify-content-between mt-4"><!-- 需要平均分配页面布局ed最大的DIV -->
+									 <div class="my_room"><!-- 每个小DIV -->
+										 <div class="img1">
+											 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+										 </div>
+										 <div class="mt-3 ml-3">
+											 <img class="my_qian mb-1 " src="qian.png" alt="">
+											 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+										 </div>
+											<div class="my_m2">
+												<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+												<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+										  </div>
+											<div class="ml-3 mt-2">
+												<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+											</div>
+											<div class="ml-2">
+												<span class="span_little">深呼吸2.0</span>
+												<span class="span_little">智能生活</span>
+												<span class="span_little">优格2.0</span>
+											</div>
+											<div class="ml-3 mt-2">
+												<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+											</div>
+										 </div>
+										 
+									 <div class="my_room ml-4">
+									 			 <div class="img1">
+									 				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+									 			 </div>
+									 			 <div class="mt-3 ml-3">
+									 				 <img class="my_qian mb-1 " src="qian.png" alt="">
+									 				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+									 			 </div>
+									 				<div class="my_m2">
+									 					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+									 					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+									 			  </div>
+									 				<div class="ml-3 mt-2">
+									 					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+									 				</div>
+									 				<div class="ml-2">
+									 					<span class="span_little">深呼吸2.0</span>
+									 					<span class="span_little">智能生活</span>
+									 					<span class="span_little">优格2.0</span>
+									 				</div>
+									 				<div class="ml-3 mt-2">
+									 					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+									 				</div>
+										 </div>
+										 
+									 <div class="my_room ml-4"><!-- 每个小DIV -->
+									 			 <div class="img1">
+									 				 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+									 			 </div>
+									 			 <div class="mt-3 ml-3">
+									 				 <img class="my_qian mb-1 " src="qian.png" alt="">
+									 				 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+									 			 </div>
+									 				<div class="my_m2">
+									 					<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+									 					<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+									 			  </div>
+									 				<div class="ml-3 mt-2">
+									 					<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+									 				</div>
+									 				<div class="ml-2">
+									 					<span class="span_little">深呼吸2.0</span>
+									 					<span class="span_little">智能生活</span>
+									 					<span class="span_little">优格2.0</span>
+									 				</div>
+									 				<div class="ml-3 mt-2">
+									 					<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+									 				</div>
+										 </div>
+										</div>
+										
+									<div class="d-flex justify-content-between mt-4"><!-- 需要平均分配页面布局ed最大的DIV -->
+											 <div class="my_room"><!-- 每个小DIV -->
+												 <div class="img1">
+													 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+												 </div>
+												 <div class="mt-3 ml-3">
+													 <img class="my_qian mb-1 " src="qian.png" alt="">
+													 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+												 </div>
+													<div class="my_m2">
+														<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+														<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+												  </div>
+													<div class="ml-3 mt-2">
+														<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+													</div>
+													<div class="ml-2">
+														<span class="span_little">深呼吸2.0</span>
+														<span class="span_little">智能生活</span>
+														<span class="span_little">优格2.0</span>
+													</div>
+													<div class="ml-3 mt-2">
+														<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+													</div>
+											 </div>
+											 
+								 <div class="my_room ml-4">
+								 		 <div class="img1">
+								 			 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+								 		 </div>
+								 		 <div class="mt-3 ml-3">
+								 			 <img class="my_qian mb-1 " src="qian.png" alt="">
+								 			 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+								 		 </div>
+								 			<div class="my_m2">
+								 				<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+								 				<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+								 		  </div>
+								 			<div class="ml-3 mt-2">
+								 				<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+								 			</div>
+								 			<div class="ml-2">
+								 				<span class="span_little">深呼吸2.0</span>
+								 				<span class="span_little">智能生活</span>
+								 				<span class="span_little">优格2.0</span>
+								 			</div>
+								 			<div class="ml-3 mt-2">
+								 				<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+								 			</div>
+									</div>
+											 
+								<div class="my_room ml-4"><!-- 每个小DIV -->
+										 <div class="img1">
+											 <a href="#"><img class="img1" src="room.jpeg" alt=""></a>
+										 </div>
+										 <div class="mt-3 ml-3">
+											 <img class="my_qian mb-1 " src="qian.png" alt="">
+											 <a id="a1" href="#">整租·金轩公寓2室1厅-南</a><!-- font17px -->
+										 </div>
+											<div class="my_m2">
+												<div class=" ml-3 mt-1">115㎡ | 17/20层</div><!-- 336*13 font12px #000066-->
+												<span class="my_span ">¥11860/月</span><!-- span orange 19px -->
+										  </div>
+											<div class="ml-3 mt-2">
+												<img id="adress" src="weizhi.png" ><span id="a2">小区距徐家汇站步行约275米</span><!-- 12px -->
+											</div>
+											<div class="ml-2">
+												<span class="span_little">深呼吸2.0</span>
+												<span class="span_little">智能生活</span>
+												<span class="span_little">优格2.0</span>
+											</div>
+											<div class="ml-3 mt-2">
+												<img id="adress" src="zhiliang.png" ><span id="a2">空气质量已检测, 空置已超过15天</span>
+											</div>
+									 </div>
+									</div>
+							</div>
+ </body>
+</html>
