@@ -1,0 +1,163 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+			/* 设置背景 */
+			#bg{
+				/* width: 1920px; */
+				height: 100%;
+				background: url(../img/reg-bg.jpg) 50% no-repeat;
+				display: flex;
+				justify-content: space-around;
+			}
+			/* 设置背景中所有内容的div */
+			#content{
+				width: 960px;height: 937px;
+				background-color: transparent;
+				/* display: flex;
+				justify-content: flex-end; */
+			} 
+			/* logo */
+			.my_logo{
+				top: 99px;
+				width: 30rem;
+			}
+			.logo_size1{
+				width: 40%;
+				margin-right: 50px;
+			}
+			.logo_size2{
+				width: 40%;
+			}
+			/* 注册栏div */
+			#form{
+				width: 336px;height: 370px;
+				background-color: rgba(0,0,0,0.55);
+				padding: 16.8px 28px;
+				margin-top: 80px;
+				margin-left: 624px;
+			}
+			
+			/* 用户和密码：input的验证 */
+			.value{
+						visibility: hidden;
+						height: 20px;
+			}
+			.value_success,.value_fail {
+						background-repeat: no-repeat;
+						background-position: left center;
+						display: block;
+			}
+			.value_success {
+						background-image: url(../img/正确.png);
+						padding-left: 15px;
+						width: 0px;
+						height: 20px;
+						overflow: hidden;
+			}
+			.value_fail {
+						background-image: url(../img/错误.png);
+						color: Red;
+						padding-left: 15px;
+						height: 20px;
+						font-size: 10px;
+			}	
+				
+			/* 注册栏中:注册新账号分割线 */
+			 #form_top{
+				color: #f4f2f5;
+				border-bottom: 1px solid #f4f2f5;
+				font-size: 16.8px;
+				margin-bottom: 13.44px;
+			}
+			#form_top p{
+				margin-bottom: 0px;
+			}
+			p{
+				color: #dfdfdf;
+				margin-bottom: 8px;
+			}
+		/* 手机号,密码输入框 */	
+      #my_phone_input{
+				width: 280px;height: 37.78px;
+				padding: 8.4px;
+				border-radius: 3px;
+				border: 0;
+				font-size: 14px;
+				margin-bottom: 16px;
+			}
+			 #my_phone_input:focus{
+				 outline: 0;
+				 border:1px solid #fd7e14;
+			 }
+			 /* 同意按钮条款 */
+			 div span{
+				 color: #dfdfdf;
+				 margin:0px 0px 6px 10px;
+			 }
+			.article{
+				color: #EE7500;
+			}
+			.article:hover{
+				text-decoration: none;
+				color: #EE7500;
+			}
+			/* 注册按钮 */
+			.login{
+				width: 280px;height: 41.78px;
+				background-color: #37b04e;
+				opacity: 0.6;
+				font-size: 14px;
+				color: white;
+				border: 0;
+				margin: 16.8px 0px 7px;
+			}
+			.login:focus{
+				outline: 0;
+			}
+			.login:hover{
+				cursor: pointer;
+			}
+			/* 注册框最底部 */
+			#bottom{
+				display: flex;
+			}
+			.login_bottom{
+				font-size: 14px;
+				color: #FFFFFF;
+				margin-top: 3px;
+			}
+			.login_bottom:hover{
+				color: #FFFFFF;
+			}
+			.login_bottom1{
+				font-size: 14px;
+				color: #FFFFFF;
+				margin-left: 98px;
+			}
+			.login_bottom1:hover{
+				color: #FFFFFF;
+			}
+			/* 底部图标 */
+			#footer{
+				bottom: 20px;
+				left: 310px;
+			}
+			.foot_size{
+				width: 35px;
+			}
+			
+			.footer_ml{
+				margin-left:42px;
+			}
+			.font_small{
+				font-size: 12px;
+			}
+			#origin_bg{
+				margin-top: 795px;
+				margin-left: 780px;
+				width: 35px;height: 120px;
+				background-color: #f2a654;
+				border-radius: 50px;
+			}
+			.my_img_size{
+				width: 35px;height: 120px;
+			}
+			
